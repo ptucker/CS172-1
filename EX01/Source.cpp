@@ -2,6 +2,15 @@
 //CS172
 //EX01
 
+//PT
+// EX01_01: 20/20
+// EX01_02: 19/20
+// EX01_03: 16/20
+// EX01_04: 20/20
+// EX01_05: 10/20
+//--------------------
+// TOTAL : 95/100
+
 EX01_01
 A) CPU
 B) RAM
@@ -39,6 +48,7 @@ int main() {
 }
 void ex02(bool hasPassedTest, int x, int y, int numberOfShares, int boxWidth, int bookWidth, int shelfLife, int outsideTemp)
 {
+	//PT: Not really initialized a bool variable. -1
 	cout << hasPassedTest << endl;
 	cout << "x = " << x << " & y = " << y << endl;
 	if (x > y)
@@ -59,6 +69,7 @@ void ex02(bool hasPassedTest, int x, int y, int numberOfShares, int boxWidth, in
 	}
 	if (outsideTemp > 90)
 	{
+		//PT: -4, not -5
 		shelfLife = shelfLife - 5;
 		cout << "The new shelf life for the box of chocolate is: " << shelfLife << endl;
 	}
@@ -71,11 +82,13 @@ void ex02(bool hasPassedTest, int x, int y, int numberOfShares, int boxWidth, in
 
 EX01_03
 
+//PT: don't need to re-include these
 #include <iostream>
 #include <cmath>
 #include <string>
 using namespace std;
 void ex03(int squareArea, char userResponse, string mailingAddress);
+//PT Just have one main() function. -3
 int main() {
 	int squareArea;
 	string mailingAddress;
@@ -94,6 +107,7 @@ void ex03(int squareArea, char userResponse, string mailingAddress)
 {
 	double hypotenuse = sqrt(2 * squareArea);
 	cout << "The length of the diagonal of the square is: " << hypotenuse << endl;
+	//PT: almost. char tab = '\t'; -1
 	//char tab = "\t";
 	if (userResponse == 'y')
 	{
@@ -114,6 +128,7 @@ using namespace std;
 void ex04(int number);
 void add(int x, int y);
 void addOne(int &y);
+//PT: Again, just one main
 int main() {
 	int number;
 	cout << "Please enter a number between 1 and 10: ";
